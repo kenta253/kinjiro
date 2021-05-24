@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark peach-gradient">
 
   <a class="navbar-brand" href="/"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
-
   <ul class="navbar-nav ml-auto">
 
     @guest
@@ -14,6 +13,10 @@
     <li class="nav-item">
       <a class="nav-link" href="{{ route('login')}}">ログイン</a>
     </li>
+    <a href="{{ route('login.guest') }}" class="btn btn-default pl-3 pr-3 pt-2 ml-3">
+     ゲストログイン
+    </a>
+</button>
     @endguest
 
     @auth
