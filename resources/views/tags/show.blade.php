@@ -6,15 +6,18 @@
   @include('nav')
   <div class="container">
     <div class="card mt-3">
-      <div class="card-body">
-        <h2 class="h4 card-title m-0">{{ $tag->hashtag }}</h2>
-        <div class="card-text text-right">
+    <nav class="navbar navbar-expand navbar-dark peach-gradient">
+      <div class="card-body text-white text-center">
+        <h2 class="h2 m-0">{{ $tag->hashtag }}</h2>
+        <h4 class="text-right text-white">
           {{ $tag->articles->count() }}件
-        </div>
+        </h4>
       </div>
+      </nav>
     </div>
     @foreach($tag->articles as $article)
       @include('articles.card')
     @endforeach
   </div>
+
 @endsection

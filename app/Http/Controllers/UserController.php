@@ -18,7 +18,7 @@ class UserController extends Controller
   {
     $user = User::where('name', $name)->first();
     $user->fill($request->all())->save();
-    return redirect()->route('articles.index');
+    return redirect()->route('users.show', ['name' => $user->name]);
   }
 
   public function show(string $name)
