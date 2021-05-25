@@ -26,6 +26,8 @@ Route::prefix('users')->name('users.')->group(function () {
     Route::get('/{name}/likes', 'UserController@likes')->name('likes');
     Route::get('/{name}/followings', 'UserController@followings')->name('followings');
     Route::get('/{name}/followers', 'UserController@followers')->name('followers');
+    Route::patch('/{name}', 'UserController@update')->name('update');
+    Route::get('/{name}/edit', 'UserController@edit')->name('edit');
 Route::middleware('auth')->group(function () {
     Route::put('/{name}/follow', 'UserController@follow')->name('follow');
     Route::delete('/users/{name}/follow', 'UserController@unfollow')->name('users.unfollow');

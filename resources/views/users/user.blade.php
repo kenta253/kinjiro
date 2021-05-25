@@ -4,6 +4,9 @@
       <a href="{{ route('users.show', ['name' => $user->name]) }}" class="text-dark">
         <i class="fas fa-user-circle fa-3x"></i>
       </a>
+      <a href="{{ route('users.edit', ['name' => $user->name ]) }}" class="btn btn-default p-3">
+        編集する
+      </a>
       @if( Auth::id() !== $user->id )
         <follow-button
           class="ml-auto"
@@ -19,6 +22,9 @@
         {{ $user->name }}
       </a>
     </h2>
+    <h3>
+      {{ $user->introduction}}
+    </h3>
   </div>
   <div class="card-body">
     <div class="card-text">
