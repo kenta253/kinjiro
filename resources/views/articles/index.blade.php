@@ -8,6 +8,7 @@
 <div class="col-3 side">
 <div class="sidebar_fixed side_bar">
 @include('tags.card')
+<a href="{{'tasks'}}">HOME</a>
 </div>
 </div>
 <div class="col-5 mt-3 index-article">

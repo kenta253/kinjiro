@@ -12,6 +12,7 @@
 */
 
 Auth::routes();
+Route::get('tasks', 'TasksController@home');
 Route::get('guest', 'Auth\LoginController@guestLogin')->name('login.guest');
 Route::get('/', 'ArticleController@index')->name('articles.index');
 Route::resource('/articles', 'ArticleController')->except(['index', 'show'])->middleware('auth');
