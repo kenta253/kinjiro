@@ -7,7 +7,7 @@
             <div class="input-group-append mt-1">
               <button v-on:click="setItems" class="btn btn-primary" type="submit">@{{changeButtonText}}</button>
             </div>
-    </div>
+</div>
 </form>
 
 <!--ループ処理-->
@@ -110,4 +110,4 @@
 
 .done { text-decoration: line-through; }
 
-<style>
+</style>

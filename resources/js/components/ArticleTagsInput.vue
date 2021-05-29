@@ -8,7 +8,7 @@
     <vue-tags-input
       v-model="tag"
       :tags="tags"
-      placeholder="タグを5個まで入力できます"
+      placeholder="タグを５個まで入力できます。メインタグ:「質問」「目標宣言」「学習友達募集」「今日の積み上げ」「今日のfavorite_code」 "
       :autocomplete-items="filteredItems"
       :add-on-key="[13, 32]"
       @tags-changed="newTags => tags = newTags"

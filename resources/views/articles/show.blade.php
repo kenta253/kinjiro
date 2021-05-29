@@ -5,6 +5,11 @@
 @section('content')
   @include('nav')
   <div class="container">
-    @include('articles.card')
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+                  @include('articles.card')
+      </div>
+
+    </div>
   </div>
 @endsection

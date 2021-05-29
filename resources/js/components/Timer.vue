@@ -72,7 +72,7 @@ rotate_right: function() {
  this.isRight = true;
 },
 threeMin: function() {
- this.pickTime = 3 * 60 * 1000;
+ this.pickTime = 25 * 60 * 1000;
  this.totalTime = this.pickTime;
  this.resolution = 100;
 },
@@ -124,14 +124,16 @@ seconds: function() {
 }
      }
      }
+
 </script>
 
 <style scoped>
 .timer_container {
-  margin-top: 10%;
-  width: 90%;
+  margin-top: 15%;
+  width: auto;
   justify-content: center;
   align-items: center;
+  margin-bottom:20%;
 }
 
 .v-enter-active {

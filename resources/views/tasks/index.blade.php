@@ -17,9 +17,7 @@
  <div class="w-75 my-box">
    <div class="card">
    <div class="card-text">
-      <div class="col align-self-center">
-
-
+      <div class="col align-self-center task">
            <task></task>
          </div>
          </div>
@@ -29,8 +27,6 @@
 </div>
 
 </div>
-
-
 
 
 

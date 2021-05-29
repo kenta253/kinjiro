@@ -96,4 +96,36 @@
   @endforeach
   </div>
 
+<div class="comment">
+  <form class="mb-4" method="POST" action="{{ route('comment.store') }}">
+    @csrf
+
+    <div class="form-group">
+      <label for="body">
+        本文
+      </label>
+
+      <textarea
+        id="comment"
+        name="comment"
+        class="form-control {{ $errors->has('comment') ? 'is-invalid' : '' }}"
+        rows="4"
+    >{{ old('comment') }}</textarea>
+    @if ($errors->has('comment'))
+      <div class="invalid-feedback">
+        {{ $errors->first('comment') }}
+      </div>
+    @endif
+</div>
+
+<div class="mt-4">
+  <button type="submit" class="btn btn-primary">
+    コメントする
+  </button>
+</div>
+</form>
+
+</div>
+
+
 </div>

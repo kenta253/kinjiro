@@ -12,6 +12,7 @@
 */
 
 Auth::routes();
+Route::resource('comment', 'CommentsController', ['only' => ['store']]);
 Route::get('tasks', 'TasksController@home');
 Route::get('guest', 'Auth\LoginController@guestLogin')->name('login.guest');
 Route::get('/', 'ArticleController@index')->name('articles.index');
