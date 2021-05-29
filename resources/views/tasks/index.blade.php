@@ -6,14 +6,29 @@
 
 @section('content')
 
+<div class="container">
+  <div class="row row1">
+     <div class="col align-self-center">
+         <timer></timer>
+     </div>
+  </div>
 
-  <timer
-    >
-  </timer>
+<div class="row row2">
+ <div class="w-75 my-box">
+   <div class="card">
+   <div class="card-text">
+      <div class="col align-self-center">
 
-  <task
-  >
-  </task>
+
+           <task></task>
+         </div>
+         </div>
+           </div>
+
+  </div>
+</div>
+
+</div>
 
 
 

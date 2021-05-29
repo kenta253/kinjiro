@@ -2,7 +2,7 @@
   <div id="foo">
   <div class="content" v-show="!show" v-cloak>
     <!-- Pick TimeButton -->
-    <div class="pick-button">
+    <div class="pick-button text-center">
       <img
         @click="show = !show; threeMin()" v-on:mouseover="rotate_left"
         type="image" class="left_timer" src="/image/25min.svg" alt="3min_timer" loading="lazy"
@@ -15,7 +15,7 @@
   </div>
 
   <transition appear v-cloak>
-    <div class="timer_container" v-show="show" v-cloak>
+    <div class="timer_container text-center" v-show="show" v-cloak>
       <!-- Timer -->
       <div class="timer">
         <span id="minutes">{{ minutes }}</span>
@@ -42,6 +42,7 @@
       <a @click="show = !show; stopTimer()" class="back-button">BACK</a>
     </div>
   </transition>
+
   </div>
 </template>
 
@@ -126,14 +127,8 @@ seconds: function() {
 </script>
 
 <style scoped>
-#app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .timer_container {
+  margin-top: 10%;
   width: 90%;
   justify-content: center;
   align-items: center;
@@ -152,36 +147,9 @@ seconds: function() {
   display: none;
 }
 
-.right_face {
-  display: block;
-  background-size: cover;
-  margin: 0px auto 10px;
-  border-radius: 50%;
-  border: 5px solid #646464;
-  animation: anime1 0.4s linear 2;
-}
-@keyframes anime1 {
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-.left_face {
-  display: block;
-  background-size: cover;
-  margin: 0px auto 10px;
-  border-radius: 50%;
-  border: 5px solid #646464;
-  animation: anime2 0.4s linear 2;
-}
-@keyframes anime2 {
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
 .pick-button {
-  margin: auto;
+  margin-left: 40%;
+  margin-top: 10%;
 }
 
 .right_timer {
@@ -312,23 +280,5 @@ seconds: function() {
   color: #fff;
   cursor: pointer;
   text-decoration: none;
-}
-@media only screen and (max-width: 540px) {
-  .timer {
-    font-size: 50px;
-  }
-  .right_face {
-    width: 90%;
-  }
-  .left_face {
-    width: 90%;
-  }
-  .right_timer {
-    width: 40%;
-  }
-  .left_timer {
-    width: 40%;
-    margin-right: 15px;
-  }
 }
 </style>

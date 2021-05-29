@@ -1,20 +1,21 @@
 <template>
-<div class="todo col-5">
-<form v-on:submit.prevent="addItem" class="form-group">
-    <div class="form-group">
+<div class="todo">
+
+<form v-on:submit.prevent="addItem">
         <div class="input-group">
-            <input type="text" v-model="text" v-on:keyup.enter="changeItems" ref="editor" class="form-control">
-            <span class="input-group-btn"><button v-on:click="setItems" class="btn btn-primary" type="submit">@{{changeButtonText}}</button></span>
-        </div>
+            <input type="text" v-model="text" v-on:keyup.enter="changeItems" ref="editor" class="form-control mt-3">
+            <div class="input-group-append mt-1">
+              <button v-on:click="setItems" class="btn btn-primary" type="submit">@{{changeButtonText}}</button>
+            </div>
     </div>
 </form>
-
-<hr>
 
 <!--ループ処理-->
 <ul class="list-group">
     <li class="list-group-item" v-for="(item, index) in items" v-bind:key="index">
-        @{{ item }}
+        <label v-bind:class="{ done: item.isChecked }">
+        <input type="checkbox" v-model="item.isChecked"> @{{ item }}
+        </label>
         <span class="pull-right">
         <div class="row justify-content-end">
 
@@ -30,7 +31,7 @@
         </span>
     </li>
 </ul>
-</div>
+     </div>
 </template>
 
 <script>
@@ -46,10 +47,8 @@
     editIndex: -1, // 現在編集している要素のインデックス
                // 編集状態でない場合は-1を設定
 
-               items: [       // 要素のリストをデフォルトで3つ設定
-               "タスク１",
-               "タスク２",
-               "タスク３"
+               items: [
+
                ]
     }
   },
@@ -106,3 +105,9 @@
 }
 
 </script>
+
+<style scoped>
+
+.done { text-decoration: line-through; }
+
+<style>
