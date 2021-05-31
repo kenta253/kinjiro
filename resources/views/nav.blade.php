@@ -1,7 +1,7 @@
   <nav class="navbar navbar-expand navbar-dark peach-gradient">
 
   <a class="navbar-brand text-uppercase font-weight-bold" href="/"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
-  <ul class="navbar-nav ml-auto">
+  <ul class="navbar-nav ml-auto mr-5">
 
     @guest
     <li class="nav-item">
@@ -21,13 +21,21 @@
 
     @auth
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('articles.create')}}"><i class="fas fa-pen mr-1"></i>投稿する</a>
+      <a href="{{'tasks'}}" class="nav-link"><i class="fas fa-fist-raised">
+        勉強しに行く
+      </i></a>
+    </li>
+    @endauth
+
+    @auth
+    <li class="nav-item">
+      <a class="nav-link mr-3" href="{{ route('articles.create')}}"><i class="fas fa-pen mr-1"></i>投稿する</a>
     </li>
     @endauth
 
     @auth
     <!-- Dropdown -->
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown mr-4">
       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
          aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-user-circle"></i>

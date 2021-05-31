@@ -89,6 +89,7 @@ public function destroy(Article $article)
 
 public function show(Article $article)
 {
+  $article->load('user', 'comments');
   return view('articles.show', ['article' => $article]);
 }
 

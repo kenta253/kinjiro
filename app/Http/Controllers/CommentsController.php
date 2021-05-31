@@ -2,23 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Requests\CommentRequest;
+use Illuminate\Http\Request;
 use App\Comment;
+use App\Article;
+use Auth;
+
 
 class CommentsController extends Controller
 {
 
-  public function store(CommentRequest $request )
-   {
-       $savedata = [
-           'comment' => $request->comment,
-       ];
+  public function store(CommentRequest $request, Comment $comment)
+      {
+        $article = Article::find($request->article_id);
+         //まず該当の投稿を探す
 
-        $comment = new Comment;
-       $comment->fill($savedata)->save();
-
-       return redirect()->route('articles.show', [$savedata['comment']]);
-   }
+        $comment -> comment    = $request -> comment;
+        $comment -> user_id = Auth::id();
+        $comment -> article_id = $request -> article_id;
+        $comment -> save();
+        return view('articles.show', compact('article'));
+      }
 
 }

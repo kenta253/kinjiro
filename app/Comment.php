@@ -3,23 +3,23 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Comment extends Model
 {
 
   protected $fillable = [
-   'comment',
+      'comment'
    ];
 
-   public function user(): BelongsToMany
- {
-     return $this->belongsToMany('App\User')->withTimestamps();
- }
+   public function user(): BelongsTo
+   {
+       return $this->belongsTo('App\User');
+   }
 
- public function articles(): BelongsToMany
-{
-   return $this->belongsToMany('App\Article')->withTimestamps();
-}
+   public function articles(): BelongsTo
+   {
+       return $this->belongsTo('App\Article');
+   }
 
 }

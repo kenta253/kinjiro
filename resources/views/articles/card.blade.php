@@ -61,26 +61,12 @@
   </div>
   <div class="article">
     <div class="card-body pt-0">
-      <h3 class="h4 card-title">
         <a class="text-dark" href="{{ route('articles.show', ['article' => $article]) }}">
-          {{ $article->title }}
+            {{ $article->body }}
         </a>
-      </h3>
-      <div class="card-text">
-        {{ $article->body }}
-      </div>
     </div>
     <div class="card-body pt-0 pb-2 pl-3">
-    <div class="card-text">
-      <article-like
-      :initial-is-liked-by='@json($article->isLikedBy(Auth::user()))'
-      :initial-count-likes='@json($article->count_likes)'
-      :authorized='@json(Auth::check())'
-      endpoint="{{ route('articles.like', ['article' => $article]) }}"
-      >
-      </article-like>
     </div>
-  </div>
   @foreach($article->tags as $tag)
     @if($loop->first)
       <div class="card-body pt-0 pb-4 pl-3">
@@ -94,38 +80,22 @@
       </div>
     @endif
   @endforeach
+
+  <hr>
+
+  <div class="card-text d-flex">
+      <article-like
+      :initial-is-liked-by='@json($article->isLikedBy(Auth::user()))'
+      :initial-count-likes='@json($article->count_likes)'
+      :authorized='@json(Auth::check())'
+      endpoint="{{ route('articles.like', ['article' => $article]) }}"
+      >
+      </article-like>
+      <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <i class="far fa-comment ml-3 mt-1 fa-lg"></i>
+      </a>
   </div>
 
-<div class="comment">
-  <form class="mb-4" method="POST" action="{{ route('comment.store') }}">
-    @csrf
+  </div>
 
-    <div class="form-group">
-      <label for="body">
-        本文
-      </label>
-
-      <textarea
-        id="comment"
-        name="comment"
-        class="form-control {{ $errors->has('comment') ? 'is-invalid' : '' }}"
-        rows="4"
-    >{{ old('comment') }}</textarea>
-    @if ($errors->has('comment'))
-      <div class="invalid-feedback">
-        {{ $errors->first('comment') }}
-      </div>
-    @endif
-</div>
-
-<div class="mt-4">
-  <button type="submit" class="btn btn-primary">
-    コメントする
-  </button>
-</div>
-</form>
-
-</div>
-
-
-</div>
+  </div>
