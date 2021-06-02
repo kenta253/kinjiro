@@ -6,9 +6,9 @@
 @include('nav')
 <div class="container">
   <div class="row">
-  <div class="col-4 side">
+  <div class="col-4 side　sidebar_fixed">
     <div class="mt-3 pl-3 border border-primary rounded">
-        <a href="{{'tasks'}}" class="fa-5x"><i class="fas fa-fist-raised">
+        <a href="{{'tasks.index '}}" class="fa-5x"><i class="fas fa-fist-raised">
           勉強！
         </i></a>
     </div>

@@ -15,6 +15,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
 <!-- css -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+  <!-- デフォルトのスタイルシート -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- ブルーテーマの追加スタイルシート -->
+  <link rel="stylesheet" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+
+    @yield('styles')
+
+
 </head>
 
 <body>
@@ -33,6 +42,11 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
   <!-- infinite scroll-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.1.0/jquery.infinitescroll.min.js"></script>
+
+  @yield('scripts')
+
+
+
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 

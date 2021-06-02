@@ -13,7 +13,15 @@
 
 Auth::routes();
 Route::resource('comment', 'CommentsController', ['only' => ['store']]);
-Route::get('tasks', 'TasksController@home');
+
+Route::get('/folders/create', 'FolderController@showCreateForm')->name('folders.create');
+Route::post('/folders/create', 'FolderController@create');
+Route::get('/folders/{id}/tasks', 'TasksController@index')->name('tasks.index');
+Route::get('/folders/{id}/tasks/create', 'TasksController@showCreateForm')->name('tasks.create');
+Route::post('/folders/{id}/tasks/create', 'TasksController@create');
+Route::get('/folders/{id}/tasks/{task_id}/edit', 'TasksController@showEditForm')->name('tasks.edit');
+Route::post('/folders/{id}/tasks/{task_id}/edit', 'TasksController@edit');
+
 Route::get('guest', 'Auth\LoginController@guestLogin')->name('login.guest');
 Route::get('/', 'ArticleController@index')->name('articles.index');
 Route::resource('/articles', 'ArticleController')->except(['index', 'show'])->middleware('auth');
@@ -22,6 +30,7 @@ Route::prefix('articles')->name('articles.')->group(function () {
     Route::put('/{article}/like', 'ArticleController@like')->name('like')->middleware('auth');
     Route::delete('/{article}/like', 'ArticleController@unlike')->name('unlike')->middleware('auth');
 });
+
 Route::get('/tags/{name}', 'TagController@show')->name('tags.show');
 Route::prefix('users')->name('users.')->group(function () {
     Route::get('/{name}', 'UserController@show')->name('show');

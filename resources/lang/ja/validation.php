@@ -81,6 +81,7 @@ return [
         'file'    => ':attributeには、:max kB以下のファイルを指定してください。',
         'string'  => ':attributeは、:max文字以下で指定してください。',
         'array'   => ':attributeは:max個以下指定してください。',
+        'string'  => ':attribute は :max 文字以内で入力してください。',
     ],
     'mimes'                => ':attributeには:valuesタイプのファイルを指定してください。',
     'mimetypes'            => ':attributeには:valuesタイプのファイルを指定してください。',
