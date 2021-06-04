@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Task extends Model
 {
@@ -64,4 +65,10 @@ public function getFormattedDueDateAttribute()
    return Carbon::createFromFormat('Y-m-d', $this->attributes['due_date'])
        ->format('Y/m/d');
 }
+
+public function folders(): BelongsTo
+{
+    return $this->belongsTo('App\Folder');
+}
+
 }

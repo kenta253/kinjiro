@@ -5,17 +5,18 @@ namespace App\Http\Controllers;
 
 use App\Folder;
 use App\Task;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\TaskRequest;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateTask;
-
+use App\Http\Requests\EditTaskRequest;
 
 class TasksController extends Controller
 {
 
 public function index(int $id)
 {
-  $folders =Folder::all();
+  $folders = Auth::user()->folders()->get();
 
   // 選ばれたフォルダを取得する
   $current_folder = Folder::find($id);
@@ -60,7 +61,7 @@ public function showEditForm(int $id, int $task_id)
     ]);
 }
 
-public function edit(int $id, int $task_id, EditTask $request)
+public function edit(int $id, int $task_id, EditTaskRequest $request)
 {
     // 1
     $task = Task::find($task_id);

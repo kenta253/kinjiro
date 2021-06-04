@@ -10,14 +10,14 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    private const GUEST_USER_ID = 4;
+    private const GUEST_USER_ID = 1;
 
     // ゲストログイン処理
     public function guestLogin()
     {
     // id=1 のゲストユーザー情報がDBに存在すれば、ゲストログインする
     if (Auth::loginUsingId(self::GUEST_USER_ID)) {
-        return redirect('/');
+        return redirect('/home');
     }
 
     return redirect('/');

@@ -87,4 +87,10 @@ public function getCountFollowingsAttribute(): int
 {
     return $this->followings->count();
 }
+
+public function folders()
+{
+    return $this->hasMany('App\Folder');
+}
+
 }
