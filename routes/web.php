@@ -14,7 +14,10 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/homes', 'HomesController@index')->name('homes.index');
+
+Route::get('/homes', 'HomesController@index')->name('homes');
+
+
 
 Route::get('guest', 'Auth\LoginController@guestLogin')->name('login.guest');
 Route::get('/home', 'ArticleController@index')->name('articles.index');
