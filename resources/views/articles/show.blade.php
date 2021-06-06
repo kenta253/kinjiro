@@ -10,7 +10,8 @@
                   @include('articles.card')
       </div>
     </div>
-  </div><div class="collapse" id="collapseExample">
+  </div>
+  <div class="collapse" id="collapseExample">
     <div class="row justify-content-center">
         <div class="col-md-8">
             @foreach ($article->comments as $comment)
@@ -25,7 +26,7 @@
     </div>
     <div class="row justify-content-center">
             <div class="col-md-8">
-                <form action="{{ route('comment.store') }}" method="POST">
+                <form action="{{ route('users.comment.store') }}" method="POST">
                 @csrf
                     <input type="hidden" name="article_id" value="{{ $article->id }}">
                     <div class="form-group">
