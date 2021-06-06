@@ -21,7 +21,7 @@
 
     @auth
     <li class="nav-item">
-      <a href="{{route('homes.index')}}" class="nav-link"><i class="fas fa-fist-raised">
+      <a href="{{route('homes')}}" class="nav-link"><i class="fas fa-fist-raised">
         勉強しに行く
       </i></a>
     </li>
