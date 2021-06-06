@@ -9,7 +9,9 @@ class Comment extends Model
 {
 
   protected $fillable = [
-      'comment'
+      'comment',
+      'user_id',
+      'article_id',
    ];
 
    public function user(): BelongsTo

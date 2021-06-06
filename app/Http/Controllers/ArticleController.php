@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\User;
 use App\Tag;
 use App\Http\Requests\ArticleRequest;
 use Illuminate\Support\Facades\Auth;
@@ -20,7 +21,10 @@ class ArticleController extends Controller
 
    $articles = Article::all()->sortByDesc('created_at')
    ->load(['user', 'likes', 'tags']);
-   return view('articles.index', ['articles' => $articles]);
+
+   return view('articles.index', [
+     'articles' => $articles,
+ ]);
 }
 
 public function create()

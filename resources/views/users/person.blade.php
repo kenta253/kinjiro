@@ -9,7 +9,7 @@
           class="ml-auto"
           :initial-is-followed-by='@json($person->isFollowedBy(Auth::user()))'
           :authorized='@json(Auth::check())'
-          endpoint="{{ route('users.follow', ['name' => $person->name]) }}"
+          endpoint="{{ route('follow', ['name' => $person->name]) }}"
         >
         </follow-button>
       @endif

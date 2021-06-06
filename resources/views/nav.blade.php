@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand navbar-dark peach-gradient">
 
-  <a class="navbar-brand text-uppercase font-weight-bold" href="/"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
+  <a class="navbar-brand text-uppercase font-weight-bold" href="/home"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
   <ul class="navbar-nav ml-auto mr-5">
 
     @guest
@@ -21,7 +21,7 @@
 
     @auth
     <li class="nav-item">
-      <a href="{{'tasks'}}" class="nav-link"><i class="fas fa-fist-raised">
+      <a href="{{route('homes.index')}}" class="nav-link"><i class="fas fa-fist-raised">
         勉強しに行く
       </i></a>
     </li>

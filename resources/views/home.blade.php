@@ -35,7 +35,7 @@
               <img id="profile-image" src="asset/img/hodacat.png" alt="プロフィール画像" width="150" height="150" data-aos-duration="300" data-aos="zoom-in" data-aos-once="true" class="aos-init aos-animate">
           </div>
           <div class="col s12 m6">
-            <p>福岡県北九州市出身。大学では英語と国際関係を学んだのちに、新卒で某大手建売住宅会社の営業として入社。その後ITの技術にひかれ、</p>
+            <p>、</p>
             <ul>
               <li>- Blog: <a href="https://hodalog.com" target="_blank" rel="noopener">https://hodalog.com</a></li>
               <li>- GitHub: <a href="https://github.com/hodanov" target="_blank" rel="noopener">https://github.com/hodanov</a></li>
@@ -53,7 +53,9 @@
         <button　type="button" class="btn btn-primary" onclick="location.href='./register'">登録</button>
   </div>
   <div class="">
-        <button　 type="button" class="btn btn-success" onclick="location.href='./login'">ログイン</button>
+    <a href="{{ route('login') }}" class="btn btn-success pl-3 pr-3 pt-2 ml-3">
+     ログイン
+    </a>
   </div>
   <div class="">
     <a href="{{ route('login.guest') }}" class="btn btn-default pl-3 pr-3 pt-2 ml-3">
