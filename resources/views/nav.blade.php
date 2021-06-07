@@ -21,11 +21,7 @@
 
     @auth
     <li class="nav-item">
-<<<<<<< HEAD
-      <a href="{{route('homes.index')}}" class="nav-link"><i class="fas fa-fist-raised">
-=======
       <a href="{{route('homes')}}" class="nav-link"><i class="fas fa-fist-raised">
->>>>>>> 445d301a6a68bc95da2db0bb7010051a2258ffff
         勉強しに行く
       </i></a>
     </li>
