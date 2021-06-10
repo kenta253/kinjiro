@@ -83,7 +83,7 @@
 
   <hr>
 
-  <div class="card-text d-flex">
+  <div class="card-text d-flex justify-content-end mr-3 mb-1">
       <article-like
       :initial-is-liked-by='@json($article->isLikedBy(Auth::user()))'
       :initial-count-likes='@json($article->count_likes)'

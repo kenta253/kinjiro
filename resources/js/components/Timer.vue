@@ -2,7 +2,7 @@
   <div id="foo">
   <div class="content" v-show="!show" v-cloak>
     <!-- Pick TimeButton -->
-    <div class="pick-button text-center">
+    <div class="">
       <img
         @click="show = !show; threeMin()" v-on:mouseover="rotate_left"
         type="image" class="left_timer" src="/image/25min.svg" alt="3min_timer" loading="lazy"
