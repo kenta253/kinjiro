@@ -6,6 +6,7 @@ import ArticleTagsInput from './components/ArticleTagsInput'
 import FollowButton from './components/FollowButton'
 import Timer from './components/Timer'
 import Task from './components/Task'
+import Tips from './components/Tips'
 
 
 
@@ -17,5 +18,6 @@ const app = new Vue({
     FollowButton,
     Timer,
     Task,
+    Tips,
   }
 })

@@ -18,7 +18,7 @@
   @include('tags.card')
   </div>
   </div>
-  <div class="col-7 index-article ml-5">
+  <div class="col-6 index-article ml-5">
     @foreach($articles as $article)
     @include('articles.card')
     @endforeach

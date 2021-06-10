@@ -6,13 +6,14 @@
 
 @section('content')
 
-<div class="container">
-  <div class="row row1">
-     <div class="col align-self-center">
+<div class="tron">
+  <div class="container">
          <timer></timer>
-     </div>
   </div>
 </div>
+
+
+
 
 <div class="container">
   <div class="row">
@@ -71,9 +72,6 @@
     </div>
   </div>
 </div>
-
-
-
-
+     <tips></tips>
 
 @endsection
