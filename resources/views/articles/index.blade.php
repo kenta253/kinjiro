@@ -6,7 +6,8 @@
 @include('nav')
 <div class="container">
   <div class="row">
-  <div class="col-4 side ">
+  <div class="col-4 side">
+    <div class="sidebar">
     <div class="mt-3 pl-3 border border-primary rounded">
         <a href=" {{ route('homes') }}" class="fa-5x">
             <i class="fas fa-fist-raised">
@@ -17,6 +18,7 @@
   <div class="sidebar_fixed">
   @include('tags.card')
   </div>
+   </div>
   </div>
   <div class="col-6 index-article ml-5">
     @foreach($articles as $article)

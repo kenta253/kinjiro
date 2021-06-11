@@ -22,9 +22,10 @@
         {{ $user->name }}
       </a>
     </h2>
-    <h3>
+    <br>
+    <p>
       {{ $user->introduction}}
-    </h3>
+    </p>
   </div>
   <div class="card-body">
     <div class="card-text">

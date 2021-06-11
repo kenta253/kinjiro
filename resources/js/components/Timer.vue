@@ -129,8 +129,8 @@ seconds: function() {
 
 <style scoped>
 .timer_container {
-  margin-top: 15%;
-  width: auto;
+  margin-top: 20%;
+  width: 800px;
   justify-content: center;
   align-items: center;
   margin-bottom:20%;

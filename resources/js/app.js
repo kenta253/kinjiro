@@ -7,6 +7,8 @@ import FollowButton from './components/FollowButton'
 import Timer from './components/Timer'
 import Task from './components/Task'
 import Tips from './components/Tips'
+import FadeIn from './components/FadeIn'
+import FadeCut from './components/FadeCut'
 
 
 
@@ -19,5 +21,7 @@ const app = new Vue({
     Timer,
     Task,
     Tips,
+    FadeIn,
+    FadeCut,
   }
 })
