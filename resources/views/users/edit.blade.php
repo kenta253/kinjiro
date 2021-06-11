@@ -16,7 +16,7 @@
               <h2>
                 <i class="fas fa-user-circle fa-5x"　style="color: coral;"></i>
               </h2>
-              @if (Auth::id() == 4)
+              @if (Auth::id() == 1)
                 <p class="text-danger">※ゲストユーザーは、<br>ユーザー名とメールアドレスを編集できません。</p>
               @endif
             <div class="card-text">
@@ -25,7 +25,7 @@
                 @csrf
                 <div class="form-group text-left text-dark">
                   <label for="name">ユーザー名</label>
-                  @if (Auth::id() == 4)
+                  @if (Auth::id() == 1)
                   <input class="form-control" type="text" id="name" name="name" value="{{ $user->name }}" readonly>
                   @else
                   <input class="form-control" type="text" id="name" name="name" required value="{{$user->name ?? old('name') }}">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="form-group text-left text-dark">
                   <label for="introduction">プロフィール</label>
-                  @if (Auth::id() == 4)
+                  @if (Auth::id() == 1)
                   <textarea name="introduction" id="introduction" class="form-control" rows="5" value="{{ $user->introduction}}" readonly></textarea>
                   @else
                   <textarea name="introduction" id="introduction" class="form-control" rows="5" required value="{{$user->introduction ?? old('introduction') }}"></textarea>
