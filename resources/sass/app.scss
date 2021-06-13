@@ -986,8 +986,14 @@ h2 {
   background-color: #FFFFFF;
 }
 
+.img-radius img {
+    border-radius: 100%;
+}
+
+
 .big-bg {
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url(/image/kinjiro.png);
 
@@ -1085,6 +1091,10 @@ h2 {
     text-shadow: 1px 1px 1px rgb(26 27 33 / 80%);
     border-left: 5px solid rgba(121, 85, 72, 0.9);
     color: rgba(255,255,255,.9);
+}
+
+.task-right {
+
 }
 
 
