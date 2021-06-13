@@ -2,13 +2,15 @@
 
 @section('content')
 
+@include('nav')
+
   <div class="section big-bg valign-wrapper d-flex align-items-center justify-content-center">
-    <div class="container">
+    <div class="container mb-5">
         <div class="center">
             <h2><small class="text-muted center">総合学習プラットホーム</small></h2>
         </div>
-            <div class="row">
-              <div class="col s12 text-white center top-main">
+            <div class="row mb-5">
+              <div class="col s12 text-white center top-main ">
               <div class="display-2">K i n j i r o</div>
             </div>
         </div>

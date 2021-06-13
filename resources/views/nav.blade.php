@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand navbar-dark peach-gradient">
 
-  <a class="navbar-brand text-uppercase font-weight-bold" href="/home"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
+  <a class="navbar-brand font-weight-bold" href="/home"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
   <ul class="navbar-nav ml-auto mr-5">
 
     @guest
