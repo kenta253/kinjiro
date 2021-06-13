@@ -2,10 +2,20 @@
 
 @section('content')
 
-@include('nav')
+  <div class="section big-bg valign-wrapper d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="center">
+            <h2><small class="text-muted center">総合学習プラットホーム</small></h2>
+        </div>
+            <div class="row">
+              <div class="col s12 text-white center top-main">
+              <div class="display-2">K i n j i r o</div>
+            </div>
+        </div>
 
-  <div class="section big-bg">
+    </div>
   </div>
+
 <Fade-In>
   <div id="about-this-site">
     <div class="section valign-wrapper d-flex align-items-center justify-content-center">
@@ -32,14 +42,14 @@
 
 
 <div id="about-me">
-  <div class="section valign-wrapper　d-flex align-items-center justify-content-center">
+  <div class="section valign-wrapper">
       <div class="container">
         <h2 class="center">About me</h2>
         <div class="row">
-          <div class="col s12 m2 offset-m2">
-              <img id="profile-image" src="/image/batsumaru.jpeg" alt="プロフィール画像" width="150" height="150" data-aos-duration="300" data-aos="zoom-in" data-aos-once="true" class="aos-init aos-animate">
+          <div class="col text-center img-radius ml-5 ">
+              <img id="profile-image" src="/image/batsumaru.jpeg" alt="プロフィール画像"  width="150" height="150" data-aos-duration="300" data-aos="zoom-in" data-aos-once="true" class="aos-init aos-animate" v-prlx.mobile="{ reverse: true }">
           </div>
-          <div class="col s12 m6">
+          <div class="col s12 mr-5">
             <p>福岡県北九州市で生まれ育つ。中学校でバスケ部、高校大学で８年間吹奏楽とマーチングに打ち込む。大学では国と国との関係性に興味を持ち
               　外国語学部国際関係学科に入学。卒業後自分のアイデアを形にするような仕事がしたいと思い大手新築分譲住宅に企画営業職として入社。
               　その後、友人がプログラミングをしている所にたまたま居合わせてプログラミングの存在を知り、その後独学で勉強。
@@ -53,6 +63,7 @@
       </div>
     </div>
 </div>
+
 
 
   <div id="profile" class="section valign-wrapper">

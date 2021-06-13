@@ -7,14 +7,14 @@
 @section('content')
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mt-5">
       <div class="mx-auto">
          <timer></timer>
       </div>
     </div>
-  <div class="row mt-5">
-    <div class="col-4 ">
+  <div class="row mt-5 ">
+    <div class="col-5 ml-5">
       <div class="card">
         <div class="card-header center">フォルダ</div>
         <div class="list-group">
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="col-5">
+    <div class="col-5 task-right">
       <div class="card">
       <div class="card-header center">タスク</div>
       <table class="table">
