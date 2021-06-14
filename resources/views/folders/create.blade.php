@@ -2,9 +2,8 @@
 
 @section('title', 'todo')
 
-
   @include('nav')
-  
+
 @section('content')
 
 

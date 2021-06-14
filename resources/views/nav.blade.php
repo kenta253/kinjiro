@@ -1,17 +1,17 @@
   <nav class="navbar navbar-expand navbar-dark peach-gradient">
 
-  <a class="navbar-brand font-weight-bold" href="/home"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
+  <a class="navbar-brand font-weight-bold ml-2" href="/home"><i class="far fa-sticky-note mr-2"></i>Kinjiro</a>
   <ul class="navbar-nav ml-auto mr-5">
 
     @guest
-    <li class="nav-item">
-      <a class="nav-link" href="{{ route('register') }}">ユーザー登録</a>
+    <li class="nav-item mt-2">
+      <a class="nav-link" href="{{ route('register') }}"><i class="fas fa-user-plus"></i>ユーザー登録</a>
     </li>
     @endguest
 
     @guest
-    <li class="nav-item">
-      <a class="nav-link" href="{{ route('login')}}">ログイン</a>
+    <li class="nav-item mt-2">
+      <a class="nav-link" href="{{ route('login')}}"><i class="fas fa-user-check"></i>ログイン</a>
     </li>
     <a href="{{ route('login.guest') }}" class="btn btn-default pl-3 pr-3 pt-2 ml-3">
      ゲストログイン

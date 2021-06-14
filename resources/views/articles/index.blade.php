@@ -22,9 +22,19 @@
   </div>
   <div class="col-6 index-article ml-5">
     @foreach($articles as $article)
-    @include('articles.card')
+    @include('articles.card_copy')
     @endforeach
   </div>
+  <div class="center toukou">
+        <a href="{{ route('articles.create')}}">
+    <div class="text-white">
+
+        <h4>新規投稿</h4>
+        <h1 class="fa-4x"><i class="fas fa-plus-circle"></i></h1>
+      </div>
+
+  </div>
+    </a>
   </div>
 </div>
 

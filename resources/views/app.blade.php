@@ -7,13 +7,14 @@
   <title>
     @yield('title')
   </title>
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
-<!-- css -->
+  <!-- css -->
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
   <!-- デフォルトのスタイルシート -->
@@ -22,7 +23,6 @@
   <link rel="stylesheet" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
 
     @yield('styles')
-
 
 </head>
 
@@ -41,30 +41,13 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
 
-
-<!-- vue-prlx-->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue-prlx/dist/v-prlx.min.js"></script>
-<script>
-Vue.use(VuePrlx.default);
-</script>
+  <!-- タイマーの完了メッセージ -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   @yield('scripts')
 
-
-
-
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
   <script>
-$(function(){
-	$('#content').infinitescroll({
-		navSelector  : ".navigation",
-		nextSelector : ".navigation a",
-		itemSelector : ".article"
-	});
-});
-
+  
   export default {
   name: 'todo',
   data() {
