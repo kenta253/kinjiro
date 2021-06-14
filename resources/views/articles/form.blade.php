@@ -1,9 +1,7 @@
 @csrf
-<div class="md-form">
-  <label>タイトル</label>
-  <input type="text" name="title" class="form-control" required value="{{ $article->title ?? old('title') }}">
-</div>
-<div class="form-group">
+
+<div class="form-group mt-2">
+  <label>タグ</label>
   <article-tags-input
   :initial-tags='@json($tagNames ?? [])'
   :autocomplete-items='@json($allTagNames ?? [])'

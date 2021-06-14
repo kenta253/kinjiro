@@ -38,7 +38,7 @@ methods:{
           this.message = "人にできて、きみだけにできないことなんてあるもんか";
           break;
         case 2:
-          this.message = "やれなかった、やらなかった、どっちかな？";
+          this.message = "やれなかった、やらなかった、どっち？";
           break;
         case 3:
           this.message = "あなたがボタン押してる間他の人は勉強している。";
@@ -58,7 +58,7 @@ methods:{
           case "人にできて、きみだけにできないことなんてあるもんか":
             this.message2 = "ドラえもん";
             break;
-          case "やれなかった、やらなかった、どっちかな？":
+          case "やれなかった、やらなかった、どっち？":
             this.message2 = "相田みつを";
             break;
           case "あなたがボタン押してる間他の人は勉強している。":

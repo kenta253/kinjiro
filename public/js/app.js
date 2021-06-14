@@ -2618,7 +2618,7 @@ __webpack_require__.r(__webpack_exports__);
           break;
 
         case 2:
-          this.message = "やれなかった、やらなかった、どっちかな？";
+          this.message = "やれなかった、やらなかった、どっち？";
           break;
 
         case 3:
@@ -2643,7 +2643,7 @@ __webpack_require__.r(__webpack_exports__);
           this.message2 = "ドラえもん";
           break;
 
-        case "やれなかった、やらなかった、どっちかな？":
+        case "やれなかった、やらなかった、どっち？":
           this.message2 = "相田みつを";
           break;
 
