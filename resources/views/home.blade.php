@@ -53,12 +53,13 @@
           </div>
           <div class="col s12 mr-5">
             <p>福岡県北九州市で生まれ育つ。中学校でバスケ部、高校大学で８年間吹奏楽とマーチングに打ち込む。大学では国と国との関係性に興味を持ち
-              　外国語学部国際関係学科に入学。卒業後自分のアイデアを形にするような仕事がしたいと思い大手新築分譲住宅に企画営業職として入社。
-              　その後、友人がプログラミングをしている所にたまたま居合わせてプログラミングの存在を知り、その後独学で勉強。
+              　外国語学部国際関係学科に入学。卒業後自分のアイデアを形にするような仕事がしたいと思い大手新築分譲住宅に企画営業職として入社。　その後、友人がプログラミングをしている所にたまたま居合わせてプログラミングの存在を知り、その後独学で勉強。
+              　プログラミングの勉強期間は2020年11月〜2021年6月現在までの約半年。
+
             </p>
             <ul>
               <li>- GitHub: <a href="https://github.com/kenta253/kinjiro" target="_blank" rel="noopener">https://github.com/kenta253/kinjiro</a></li>
-              <li>- Qiita: <a href="https://qiita.com/hodanov" target="_blank" rel="noopener">https://qiita.com/hodanov</a></li>
+              <li>- Qiita: <a href="https://qiita.com/kenchi253" target="_blank" rel="noopener">https://qiita.com/kenchi253</a></li>
             </ul>
           </div>
         </div>
@@ -92,24 +93,11 @@
             </Fade-Cut>
           </div>
 
-          <div class="leaf-row">
-            <h2>2009~<span>中学時代</span></h2>
-            <Fade-In>
-              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_1998.jpg)" data-aos-duration="300" data-aos="zoom-in">
-              </div>
-            </Fade-In>
-            <Fade-Cut>
-              <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
-                <h3>バスケットボールに打ち込む</h3>
-                <p>モンスターハンターを何時間でも延々とやり続けていた</p>
-              </div>
-            </Fade-Cut>
-          </div>
 
           <div class="leaf-row">
             <h2>2012~<span>高校時代</span></h2>
             <Fade-In>
-              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_2006.jpg)" data-aos-duration="300" data-aos="zoom-in">
+              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(/image/euphonium.jpeg)" data-aos-duration="300" data-aos="zoom-in">
               </div>
             </Fade-In>
             <Fade-Cut>
@@ -123,13 +111,12 @@
           <div class="leaf-row">
             <h2>2015~<span>大学時代</span></h2>
             <Fade-In>
-              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_2010.jpg)" data-aos-duration="300" data-aos="zoom-in">
+              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(/image/world.jpeg)" data-aos-duration="300" data-aos="zoom-in">
               </div>
             </Fade-In>
             <Fade-Cut>
               <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
                 <h3>国際関係学科にて国と国との関係性を学んでいた。</h3>
-                <p>なぜか周りにエンジニアをやっている友達が多くいた。ここでは吹奏楽に打ち込む</p>
               </div>
             </Fade-Cut>
           </div>
@@ -137,57 +124,76 @@
           <div class="leaf-row">
             <h2>2020~<span>社会人</span></h2>
             <Fade-In>
-              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_2013.jpg)" data-aos-duration="300" data-aos="zoom-in">
+              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(/image/home.png)" data-aos-duration="300" data-aos="zoom-in">
               </div>
             </Fade-In>
-            <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
-              <h3>アイデアを形にする仕事がしたいと思い</h3>
-              <h3>新築戸建て分譲会社に企画営業職として入社</h3>
-              <p>土地の仕入れ、建物プランの企画、販売と、幅広く業務当たる。</p>
-            </div>
+            <Fade-Cut>
+              <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
+                <h3>アイデアを形にする仕事がしたいと思い</h3>
+                <h3>新築戸建て分譲会社に企画営業職として入社</h3>
+                <p>土地の仕入れ、建物プランの企画、販売と、幅広く業務当たる。</p>
+              </div>
+            </Fade-Cut>
           </div>
 
           <div class="leaf-row">
             <h2>2020　8月~</h2>
             <Fade-In>
-              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_2014.jpg)" data-aos-duration="300" data-aos="zoom-in">
+              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(/image/pc.jpeg)" data-aos-duration="300" data-aos="zoom-in">
               </div>
             </Fade-In>
-            <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
-              <h3>たまたま友人がプログラミングを書いている所に居合わせる</h3>
-              <p>電子書籍やライフハック記事を読むようになります。</p>
-            </div>
+            <Fade-Cut>
+              <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
+                <h3>たまたま友人がプログラミングを書く所に居合わせる</h3>
+                <p>この時点ではなんかおもしろそう！と思った程度でした。</p>
+              </div>
+            </Fade-Cut>
           </div>
 
           <div class="leaf-row">
-            <h2>2015<span>8月</span></h2>
-            <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_2015_08.jpg)" data-aos-duration="300" data-aos="zoom-in">
-            </div>
-            <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
-              <h3>ブログを公開する</h3>
-              <p>「アフィリエイトで儲かってノマド生活ができたら最高だなぁ」と思い、WordPressで楽譜の読み方や楽譜作成ソフトの使い方などの情報を発信し始めます。残念ながらこれで生活できるほど稼げてはいません。しかし2017年8月現在、月間80000PVのアクセスがあり、多くの人とWeb上で繋がっています。このブログをきっかけに、私はWebサイト制作の楽しさとIT技術のすごさを実感しました。</p>
-            </div>
+            <h2>2020<span>11月~2月</span></h2>
+            <Fade-In>
+              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(/image/study.jpeg)" data-aos-duration="300" data-aos="zoom-in">
+              </div>
+            </Fade-In>
+            <Fade-Cut>
+              <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
+                <h3>プログラミングの本格的な学習開始</h3>
+                <p>３ケ月の間にprogateや書籍を用いて基礎の基礎を固めていました。</p>
+              </div>
+            </Fade-Cut>
           </div>
 
           <div class="leaf-row">
-            <h2>2015<span>12月</span></h2>
-            <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_2015_12.jpg)" data-aos-duration="300" data-aos="zoom-in">
-            </div>
-            <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
-              <h3>退職してIT技術を勉強する</h3>
-              <p><span>「自由にWebアプリケーションを作れるようになったら、もっとすごいことになる！」</span></p>
-              <p>一念発起、5年間勤務した会社を辞めました。退職後、職業訓練学校でHTML/CSS, JavaScript, JAVA, SQLの基礎を学びます。</p>
-            </div>
+            <h2>2020<span>2月~4月</span></h2>
+            <Fade-In>
+              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(/image/mosha.jpeg)" data-aos-duration="300" data-aos="zoom-in">
+              </div>
+            </Fade-In>
+            <Fade-Cut>
+              <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
+                <h3>サイト模写・Ruby on Rails チュートリアル２周など。</h3>
+                <p>この頃はインプットよりもアウトプットをどんどんして形として残るものを作っていました。</p>
+                <p>githubやDB周りの勉強といったこともこの頃覚えていきました。</p>
+                <p>そしてエンジニアとして生きていきたいと思い、４月いっぱいで１年間務めた企業を退職しました。</p>
+              </div>
+            </Fade-Cut>
           </div>
 
           <div class="leaf-row">
-            <h2>2016<span>7月</span></h2>
-            <div class="leaf-circle leaf-medium aos-init" style="background-image: url(asset/img/rsz_profile_2016.jpg)" data-aos-duration="300" data-aos="zoom-in">
-            </div>
-            <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
-              <h3>そしてIT業界へ飛び込んだ</h3>
-              <p>IT企業に拾ってもらい、現在はWebエンジニアとして働いています。</p>
-            </div>
+            <h2>2020<span>5~6月</span></h2>
+            <Fade-In>
+              <div class="leaf-circle leaf-medium aos-init" style="background-image: url(/image/taro.jpeg)" data-aos-duration="300" data-aos="zoom-in">
+              </div>
+            </Fade-In>
+            <Fade-Cut>
+              <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
+                <h3>アイデアや工夫を表現できるの面白い！</h3>
+                <p>それまでRubyをずっとやっていましたが、他の言語ってどんな感じなんだろう？と思いPHPとLaravelの学習を始めました</p>
+                <p>個人的にPHPとLaravelの方が使いやすく半年間の集大成ということでポートフォリオを作成.</p>
+                <p>１ヶ月でなんとしても仕上げる！と自分の中で決め１ヶ月でこちらのkinjiroを作成しました。</p>
+              </div>
+            </Fade-Cut>
           </div>
 
         </div>
@@ -195,13 +201,12 @@
 
       <div class="row">
         <div class="col s12 m8 offset-m2 closing-profile">
-          <h2 data-aos="fade-in" data-aos-duration="700" data-aos-once="true" class="aos-init aos-animate">いろんな人への感謝とエンジニアリングへの想い</h2>
+          <h2 data-aos="fade-in" data-aos-duration="700" data-aos-once="true" class="aos-init aos-animate">エンジニアリングへの想い</h2>
           <div data-aos="fade-up" data-aos-duration="700" data-aos-once="true" class="aos-init aos-animate">
-            <p>日々の忙しさについ忘れてしまいがちですが、今の私があるのは色んな人たちのサポートのおかげです。退職の際に応援してくれた人、技術的に未熟な私にもお仕事を紹介してくださるエージェント、スキルを磨ける環境で働かせてくださったクライアントに、本当に心から感謝しています。</p>
             <p>様々なWebサービスに触れて人生が変わる体験をしたように、今後は消費するだけでなく、体験価値を届けられるようなエンジニアになりたい。私自身が抱えている課題や周りの身近な人が抱えている問題をエンジニアリングで解決できるようになりたいと考えています。</p>
-            <p>また、ものづくりが好きなので、生涯エンジニアとして社会に貢献し続けたいとも思っています。</p>
+            <p>また、アイデアを形にすることができるものづくりが好きなので、生涯エンジニアとして社会に貢献し続けたいとも思っています。</p>
             <p>それを実現するにはどうしたらいいのか。</p>
-            <p>日々進化し続ける技術をキャッチアップするための研鑽はもちろんのこと、クライアントの悩みや課題を解決できるよう、クライアントの目線を培っていく必要があります。</p>
+            <p>日々進化し続ける技術をキャッチアップするための研鑽はもちろんのこと、クライアントの悩みや課題を解決できるよう、常にクライアントの目線に立って物事を考えることが必要です。</p>
             <p>まだまだ至らない点はたくさんありますが、時代に合わせた技術を追いかけつつ、クライアントに寄り添ったエンジニアリングができるよう、心がけていきます。</p>
           </div>
         </div>

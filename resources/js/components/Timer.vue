@@ -185,7 +185,7 @@ seconds: function() {
   background-color: #fff;
   outline: none;
   width: 200px;
-  margin-right: 40px;
+  margin-right: 80px;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 3);
   border-radius: 50%;
   transition: 0.5s;

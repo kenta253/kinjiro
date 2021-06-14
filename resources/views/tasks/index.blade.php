@@ -13,7 +13,7 @@
          <timer></timer>
       </div>
     </div>
-  <div class="row mt-5 ">
+  <div class="row mt-5 ml-5">
     <div class="col-5 ml-5">
       <div class="card">
         <div class="card-header center">フォルダ</div>
@@ -69,7 +69,7 @@
     </div>
   </div>
   </div>
-  <div class="row">
+  <div class="row tasks-tips">
     <div class="col-4">
           <tips></tips>
     </div>

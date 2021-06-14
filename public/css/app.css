@@ -1039,7 +1039,6 @@ h2 {
 
 .big-bg {
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url(/image/kinjiro.png);
 }
@@ -1139,5 +1138,10 @@ h2 {
 .center,
 .center-align {
   text-align: center;
+}
+
+.tasks-tips {
+  margin-left: 7%;
+  margin-top: 5%;
 }
 
