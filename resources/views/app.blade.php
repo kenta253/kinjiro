@@ -47,7 +47,7 @@
   @yield('scripts')
 
   <script>
-  
+
   export default {
   name: 'todo',
   data() {

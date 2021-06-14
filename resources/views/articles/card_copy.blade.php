@@ -62,7 +62,7 @@
   <div class="article">
     <div class="card-body pt-0">
         <a class="text-dark" href="{{ route('articles.show', ['article' => $article]) }}">
-            {{ $article->body }}
+          <p>{!! nl2br(htmlspecialchars($article->body)) !!}</p>
         </a>
     </div>
     <div class="card-body pt-0 pb-2 pl-3">

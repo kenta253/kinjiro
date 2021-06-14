@@ -23,9 +23,7 @@ class ArticleController extends Controller
    $articles = Article::all()->sortByDesc('created_at')
    ->load(['user', 'likes', 'tags']);
 
-   return view('articles.index', [
-     'articles' => $articles,
- ]);
+   return view('articles.index', ['articles' => $articles,]);
 }
 
 public function create()
@@ -52,6 +50,7 @@ public function store(ArticleRequest $request, Article $article)
 
     return redirect()->route('articles.index');
 }
+
 
 public function edit(Article $article)
 {
@@ -118,5 +117,5 @@ public function like(Request $request, Article $article)
             'countLikes' => $article->count_likes,
         ];
     }
-    
+
 }
