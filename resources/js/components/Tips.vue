@@ -1,6 +1,8 @@
 <template>
   <div id="tips">
-  <button v-on:click="onclick">勉強に疲れたら押そう</button>
+  <button　@click="active"　type="button" class="btn btn-success btn-lg" v-on:click="onclick">勉強に疲れたら押そう</button>
+  <div v-if="isActive"></div>
+  <div v-else>
     <div class="card">
         <div class="card-body">
         <blockquote class="blockquote mb-0">
@@ -9,7 +11,7 @@
           </blockquote>
           </div>
   </div>
-
+  </div>
 
   </div>
 </template>
@@ -20,6 +22,7 @@ export default {
   name: 'tips',
   data() {
     return {
+      isActive: true,
       message: ""
       }
 },
@@ -68,9 +71,10 @@ methods:{
             this.message2 = "新海誠";
             break;
         }
-
-
-  }
+  },
+  active: function () {
+    this.isActive = !this.isActive;
+}
 }
 }
 

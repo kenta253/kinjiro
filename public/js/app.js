@@ -2184,7 +2184,7 @@ __webpack_require__.r(__webpack_exports__);
     handleScroll: function handleScroll() {
       if (!this.visible) {
         var top = this.$refs.fade.getBoundingClientRect().top;
-        this.visible = top + 100 < window.innerHeight;
+        this.visible = top + 200 < window.innerHeight;
       }
     }
   }
@@ -2594,10 +2594,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'tips',
   data: function data() {
     return {
+      isActive: true,
       message: ""
     };
   },
@@ -2656,6 +2659,9 @@ __webpack_require__.r(__webpack_exports__);
           this.message2 = "新海誠";
           break;
       }
+    },
+    active: function active() {
+      this.isActive = !this.isActive;
     }
   }
 });
@@ -2769,7 +2775,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.timer_container[data-v-54f9552c] {\n  margin-top: 20%;\n  width: 800px;\n  justify-content: center;\n  align-items: center;\n  margin-bottom:20%;\n}\n.v-enter-active[data-v-54f9552c] {\n  transition: opacity 0.8s, transform 0.7s;\n}\n.v-enter[data-v-54f9552c] {\n  opacity: 0;\n  transform: translateY(30px);\n}\n[v-cloak][data-v-54f9552c] {\n  display: none;\n}\n.pick-button[data-v-54f9552c] {\n  margin-left: 40%;\n  margin-top: 10%;\n}\n.right_timer[data-v-54f9552c] {\n  display: inline-block;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  color: #fff;\n  background-color: #fff;\n  width: 200px;\n  box-shadow: 3px 3px 15px rgba(0, 0, 0, 3);\n  border-radius: 50%;\n  transition: 0.5s;\n}\n.right_timer[data-v-54f9552c]:hover {\n  box-shadow: none;\n  -webkit-animation: anime3-data-v-54f9552c 0.4s linear 1;\n          animation: anime3-data-v-54f9552c 0.4s linear 1;\n}\n@-webkit-keyframes anime3-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes anime3-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n.left_timer[data-v-54f9552c] {\n  display: inline-block;\n  border: none;\n  cursor: pointer;\n  color: #fff;\n  background-color: #fff;\n  outline: none;\n  width: 200px;\n  margin-right: 40px;\n  box-shadow: 3px 3px 15px rgba(0, 0, 0, 3);\n  border-radius: 50%;\n  transition: 0.5s;\n}\n.left_timer[data-v-54f9552c]:hover {\n  box-shadow: none;\n  -webkit-animation: anime4-data-v-54f9552c 0.4s linear 1;\n          animation: anime4-data-v-54f9552c 0.4s linear 1;\n}\n@-webkit-keyframes anime4-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes anime4-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n.timer[data-v-54f9552c] {\n  display: inline-block;\n  font-family: \"Kosugi Maru\", Verdana, Geneva, Tahoma, sans-serif;\n  color: #fff;\n  background-color: #000;\n  font-size: 85px;\n  width: 85%;\n  margin: 50px auto;\n  padding: 20px;\n  border-radius: 5px;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);\n}\n.start-button[data-v-54f9552c] {\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  background-color: #fff;\n  width: 90px;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 3);\n  border-radius: 50%;\n  transition: 0.5s;\n}\n.start-button[data-v-54f9552c]:hover {\n  box-shadow: none;\n}\n.stop-button[data-v-54f9552c] {\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  background-color: #fff;\n  width: 90px;\n  border-radius: 50%;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 3);\n  transition: 0.5s;\n}\n.stop-button[data-v-54f9552c]:hover {\n  box-shadow: none;\n}\n.reset-button[data-v-54f9552c] {\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  background-color: #fff;\n  width: 90px;\n  margin-left: 30px;\n  border-radius: 50%;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 3);\n  transition: 0.5s;\n}\n.reset-button[data-v-54f9552c]:hover {\n  box-shadow: none;\n}\n.back-button[data-v-54f9552c] {\n  display: inline-block;\n  font-family: \"Kosugi Maru\", Verdana, Geneva, Tahoma, sans-serif;\n  text-align: center;\n  position: relative;\n  text-decoration: none;\n  color: #1b1b1b;\n  background: #fff;\n  border: 2px solid #1b1b1b;\n  font-size: 20px;\n  width: 160px;\n  margin-top: 30px;\n  padding: 10px;\n  border-radius: 5px;\n  transition: 0.4s;\n}\n.back-button[data-v-54f9552c]:hover {\n  background: #1b1b1b;\n  color: #fff;\n  cursor: pointer;\n  text-decoration: none;\n}\n", ""]);
+exports.push([module.i, "\n.timer_container[data-v-54f9552c] {\n  margin-top: 20%;\n  width: 800px;\n  justify-content: center;\n  align-items: center;\n  margin-bottom:20%;\n}\n.v-enter-active[data-v-54f9552c] {\n  transition: opacity 0.8s, transform 0.7s;\n}\n.v-enter[data-v-54f9552c] {\n  opacity: 0;\n  transform: translateY(30px);\n}\n[v-cloak][data-v-54f9552c] {\n  display: none;\n}\n.pick-button[data-v-54f9552c] {\n  margin-left: 40%;\n  margin-top: 10%;\n}\n.right_timer[data-v-54f9552c] {\n  display: inline-block;\n  border: none;\n  cursor: pointer;\n  outline: none;\n  color: #fff;\n  background-color: #fff;\n  width: 200px;\n  box-shadow: 3px 3px 15px rgba(0, 0, 0, 3);\n  border-radius: 50%;\n  transition: 0.5s;\n}\n.right_timer[data-v-54f9552c]:hover {\n  box-shadow: none;\n  -webkit-animation: anime3-data-v-54f9552c 0.4s linear 1;\n          animation: anime3-data-v-54f9552c 0.4s linear 1;\n}\n@-webkit-keyframes anime3-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes anime3-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n.left_timer[data-v-54f9552c] {\n  display: inline-block;\n  border: none;\n  cursor: pointer;\n  color: #fff;\n  background-color: #fff;\n  outline: none;\n  width: 200px;\n  margin-right: 80px;\n  box-shadow: 3px 3px 15px rgba(0, 0, 0, 3);\n  border-radius: 50%;\n  transition: 0.5s;\n}\n.left_timer[data-v-54f9552c]:hover {\n  box-shadow: none;\n  -webkit-animation: anime4-data-v-54f9552c 0.4s linear 1;\n          animation: anime4-data-v-54f9552c 0.4s linear 1;\n}\n@-webkit-keyframes anime4-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes anime4-data-v-54f9552c {\n100% {\n    transform: rotate(360deg);\n}\n}\n.timer[data-v-54f9552c] {\n  display: inline-block;\n  font-family: \"Kosugi Maru\", Verdana, Geneva, Tahoma, sans-serif;\n  color: #fff;\n  background-color: #000;\n  font-size: 85px;\n  width: 85%;\n  margin: 50px auto;\n  padding: 20px;\n  border-radius: 5px;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);\n}\n.start-button[data-v-54f9552c] {\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  background-color: #fff;\n  width: 90px;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 3);\n  border-radius: 50%;\n  transition: 0.5s;\n}\n.start-button[data-v-54f9552c]:hover {\n  box-shadow: none;\n}\n.stop-button[data-v-54f9552c] {\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  background-color: #fff;\n  width: 90px;\n  border-radius: 50%;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 3);\n  transition: 0.5s;\n}\n.stop-button[data-v-54f9552c]:hover {\n  box-shadow: none;\n}\n.reset-button[data-v-54f9552c] {\n  display: inline-block;\n  cursor: pointer;\n  outline: none;\n  background-color: #fff;\n  width: 90px;\n  margin-left: 30px;\n  border-radius: 50%;\n  box-shadow: 1px 1px 3px rgba(0, 0, 0, 3);\n  transition: 0.5s;\n}\n.reset-button[data-v-54f9552c]:hover {\n  box-shadow: none;\n}\n.back-button[data-v-54f9552c] {\n  display: inline-block;\n  font-family: \"Kosugi Maru\", Verdana, Geneva, Tahoma, sans-serif;\n  text-align: center;\n  position: relative;\n  text-decoration: none;\n  color: #1b1b1b;\n  background: #fff;\n  border: 2px solid #1b1b1b;\n  font-size: 20px;\n  width: 160px;\n  margin-top: 30px;\n  padding: 10px;\n  border-radius: 5px;\n  transition: 0.4s;\n}\n.back-button[data-v-54f9552c]:hover {\n  background: #1b1b1b;\n  color: #fff;\n  cursor: pointer;\n  text-decoration: none;\n}\n", ""]);
 
 // exports
 
@@ -22529,21 +22535,31 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "tips" } }, [
-    _c("button", { on: { click: _vm.onclick } }, [
-      _vm._v("勉強に疲れたら押そう")
-    ]),
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-success btn-lg",
+        attrs: { type: "button" },
+        on: { click: [_vm.active, _vm.onclick] }
+      },
+      [_vm._v("勉強に疲れたら押そう")]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-body" }, [
-        _c("blockquote", { staticClass: "blockquote mb-0" }, [
-          _c("p", [_vm._v(" " + _vm._s(_vm.message) + " ")]),
-          _vm._v(" "),
-          _c("footer", { staticClass: "blockquote-footer" }, [
-            _c("cite", [_vm._v(_vm._s(_vm.message2))])
+    _vm.isActive
+      ? _c("div")
+      : _c("div", [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-body" }, [
+              _c("blockquote", { staticClass: "blockquote mb-0" }, [
+                _c("p", [_vm._v(" " + _vm._s(_vm.message) + " ")]),
+                _vm._v(" "),
+                _c("footer", { staticClass: "blockquote-footer" }, [
+                  _c("cite", [_vm._v(_vm._s(_vm.message2))])
+                ])
+              ])
+            ])
           ])
         ])
-      ])
-    ])
   ])
 }
 var staticRenderFns = []
