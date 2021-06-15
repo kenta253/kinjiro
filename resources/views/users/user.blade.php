@@ -2,11 +2,14 @@
   <div class="card-body">
     <div class="d-flex flex-row">
       <a href="{{ route('users.show', ['name' => $user->name]) }}" class="text-dark">
-        <i class="fas fa-user-circle fa-3x"></i>
+        <i class="fas fa-user-astronaut fa-3x"></i>
       </a>
+      @if( Auth::id() === $user->id )
       <a href="{{ route('users.edit', ['name' => $user->name ]) }}" class="btn btn-default p-3">
         編集する
       </a>
+      @endif
+
       @if( Auth::id() !== $user->id )
         <follow-button
           class="ml-auto"

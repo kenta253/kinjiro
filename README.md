@@ -113,6 +113,7 @@
 * Timer (vue.js / ajax)
 
 * Tips表示 (vue.js / ajax)
+ * 勉強に疲れた時役に立つ？言葉を表示します
 
 * Fade-in Fade-cut 機能（vue.js / ajax）
   ※ドミノ倒しのような爽快な演出ができたと思います。
