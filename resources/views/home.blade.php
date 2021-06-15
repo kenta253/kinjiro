@@ -145,7 +145,7 @@
             <Fade-Cut>
               <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
                 <h3>たまたま友人がプログラミングを書く所に居合わせる</h3>
-                <p>この時点ではなんかおもしろそう！と思った程度でした。</p>
+                <p>本業の宅地建物取引士試験と同時並行で空き時間を見つけて学習を始めました</p>
               </div>
             </Fade-Cut>
           </div>
