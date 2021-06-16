@@ -159,6 +159,7 @@
             <Fade-Cut>
               <div class="leaf-card aos-init" data-aos="fade-left" data-aos-duration="300">
                 <h3>プログラミングの本格的な学習開始</h3>
+                <p>宅建士試験に無事合格し、空いた時間はほぼプログラミングに注いでいました。</p>
                 <p>３ケ月の間にprogateや書籍を用いて基礎の基礎を固めていました。</p>
               </div>
             </Fade-Cut>
