@@ -50,7 +50,7 @@ URL: http://kenta-horiuchi.com/
 * バックエンド
     * PHP 7.3.11
     * Laravel 6.20.27
-    * PHPUnit 8.5.8
+    * PHPUnit 9.5.4
 
 * インフラ
    * CircleCi
