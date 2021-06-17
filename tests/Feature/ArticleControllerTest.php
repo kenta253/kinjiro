@@ -138,7 +138,46 @@ public function  testGuestEdit()
     $response->assertRedirect(route('login'));
 }
 
+// ログイン時
+ public function testAuthEdit()
+ {
+     $this->withoutExceptionHandling();
+     $article = factory(Article::class)->create();
+     $user = $article->user;
 
+     $response = $this->actingAs($user)->get(route('articles.edit', ['article' => $article]));
+
+     $response->assertStatus(200)->assertViewIs('articles.edit');
+ }
+
+
+ ### 投稿削除機能のテスト ###
+ public function testDestroy()
+ {
+     $this->withoutExceptionHandling();
+
+     // テストデータをDBに保存
+     $user = factory(User::class)->create();
+
+     $body = "テスト本文";
+     $user_id = $user->id;
+
+     $article = Article::create([
+         'body' => $body,
+         'user_id' => $user->id,
+         ]);
+
+     // DBからテストデータを削除
+     $response = $this->actingAs($user)->delete(route('articles.destroy', ['article' => $article]));
+
+     // テストデータがDBから削除されているかテスト
+     $this->assertDeleted('articles', [
+         'body' => $body,
+         'user_id' => $user_id
+     ]);
+
+     $response->assertRedirect(route('articles.index'));
+ }
 
 
   }
