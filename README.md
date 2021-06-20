@@ -6,6 +6,9 @@
 
 URL: http://kenta-horiuchi.com/
 
+作成の際に学習したことはqiitaで積極的に発信するようにしていました。
+URL: https://qiita.com/kenchi253
+
 ## アプリ概要
 
 こちらのアプリのコンセプトは
